@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EncodeDecode {
-    public String encoding(List<String> string) {
+    public String encodings(List<String> string) {
         StringBuilder encoded = new StringBuilder();
         for (String str : string) {
             int length = str.length();
