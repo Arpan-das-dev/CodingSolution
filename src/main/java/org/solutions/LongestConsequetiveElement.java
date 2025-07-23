@@ -26,5 +26,4 @@ public class LongestConsequetiveElement {
         }
         return maxStreak;
     }
-
 }
