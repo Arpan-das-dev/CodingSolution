@@ -2,7 +2,6 @@ package org.solutions;
 
 public class twoSum2 {
 
-
     public int[] twoSum(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
