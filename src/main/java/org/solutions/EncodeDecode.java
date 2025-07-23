@@ -13,7 +13,7 @@ public class EncodeDecode {
         return encoded.toString();
     }
 
-    public List<String> decoding(String encoded) {           //5#hello5#world
+    public List<String> decoding(String encoded) {           
         List<String> decoded = new ArrayList<>();
         int start = 0;
         int end = encoded.length();
