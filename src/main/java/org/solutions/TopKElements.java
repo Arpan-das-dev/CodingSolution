@@ -29,7 +29,7 @@ public class TopKElements {
         while (!minToMax.isEmpty()) {
             result[--index] = minToMax.poll().getKey();
         }
-        return result; //Add TopKElements solution using HashMap and PriorityQueue
+        return result;
 
     }
 }
