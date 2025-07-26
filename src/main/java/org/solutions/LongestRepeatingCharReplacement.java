@@ -12,18 +12,18 @@ Explanation: Replace the one “A” in the middle with “B” and form “AABB
      */
     public int characterReplacement(String s, int k) {
         int left = 0;
-        int maxCount = 0; // this variable to store the maximum repeated letter's repetition count.
+        int maxCount = 0;                                                      // this variable to store the maximum repeated letter's repetition count.
         int maxLength = 0;
-        int[] charCount = new int[26]; // creating an array of length 26 with 0 value
+        int[] charCount = new int[26];                                       // creating an array of length 26 with 0 value
         for (int right = 0; right < s.length(); right++) {
-            char currentChar = s.charAt(right); // storing the current character
-            charCount[currentChar - 'A']++; // increase the value at the index of character in alphabet
-            maxCount = Math.max(maxCount, charCount[currentChar - 'A']); // updating the max count
+            char currentChar = s.charAt(right);                            // storing the current character
+            charCount[currentChar - 'A']++;                               // increase the value at the index of character in alphabet
+            maxCount = Math.max(maxCount, charCount[currentChar - 'A']);  // updating the max count
 
             int windowLength = right - left + 1;
-            if (windowLength - maxCount > k) {  // it's used to limit the length of the sliding window on the basis of k
-                charCount[s.charAt(left) - 'A']--; // dereasing the value at most left char in the window
-                left++; // increasing the left to move the sliding window to move to next slide
+            if (windowLength - maxCount > k) {       // it's used to limit the length of the sliding window on the basis of k
+                charCount[s.charAt(left) - 'A']--;  // dereasing the value at most left char in the window
+                left++;                             // increasing the left to move the sliding window to move to next slide
             }
             maxLength = Math.max(maxLength, right - left + 1);
         }
