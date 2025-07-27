@@ -11,7 +11,6 @@ public class TopKElements {
         if (arr == null || arr.length == 0 || k <= 0) {
             return new int[0];
         }
-
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         for (int num : arr) {
             frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
