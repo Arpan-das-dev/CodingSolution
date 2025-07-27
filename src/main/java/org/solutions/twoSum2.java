@@ -13,6 +13,6 @@ public class twoSum2 {
             else right--;
         }
         return new int[]{};
-    }// "Add findTriplets.java solution"
+    }
 
 }
