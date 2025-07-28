@@ -29,7 +29,6 @@ public class PermutationInString {
             if (i >= s.length()) {
                 windowFrequency[t.charAt(i - s.length()) - 'a']--;
             }
-
             if (matches(sFrequency, windowFrequency)) return true;
         }
         return false;
