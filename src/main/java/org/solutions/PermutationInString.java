@@ -33,7 +33,6 @@ public class PermutationInString {
         }
         return false;
     }
-
     public boolean matches(int[] s1, int[] s2) {
         for (int i = 0; i < 26; i++) {
             if (s1[i] != s2[i]) return false;
