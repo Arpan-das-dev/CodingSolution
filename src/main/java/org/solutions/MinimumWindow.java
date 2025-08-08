@@ -22,7 +22,6 @@ public class MinimumWindow {
     return output empty string.
      */
     public String minWindow(String s, String t) {
-        int left = 0;
         int right = 0;
         Map<Character, Integer> charFrequency = new HashMap<>();
         Map<Character, Integer> windowFrequency = new HashMap<>();
