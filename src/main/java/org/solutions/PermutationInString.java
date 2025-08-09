@@ -7,11 +7,9 @@ public class PermutationInString {
     Input: s = "ab" t = "eidbaooo"
     Output:true
     Explanation: One permutation of "ab" is "ba", which is a substring of "eidbaooo".
-
     Input: s = "abc" t = "ccccbbbbaaaa"
     Output: false
     Explanation: None of the permutations of "abc" appear as a substring in t.
-
     Input: s = "adc" t = "dcda"
     Output: true
     Explanation: One of the permutations of "adc" is "dca", and "dca" is a substring of "dcda"
