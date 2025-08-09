@@ -22,18 +22,22 @@ public class MinimumWindow {
     return output empty string.
      */
     public String minWindow(String s, String t) {
-        int right = 0;
+        int left = 0;
+        int minLength = 0;
         Map<Character, Integer> charFrequency = new HashMap<>();
         Map<Character, Integer> windowFrequency = new HashMap<>();
         for (int i = 0; i < t.length(); i++) {
             Character ch = t.charAt(i);
             charFrequency.put(ch, charFrequency.getOrDefault(ch, 0) + 1);
         }
-        while (right < s.length()) {
-            Character c = s.charAt(right);
-            windowFrequency.put(c, windowFrequency.getOrDefault(c, 0) + 1);
+        for (int right = 0; right < s.length(); right++) {
+            Character currentChar = s.charAt(right);
+            windowFrequency.put(currentChar, windowFrequency.getOrDefault(currentChar, 0) + 1);
+            if (right >= t.length()) {
 
+            }
         }
+
         return "";
     }
 }
