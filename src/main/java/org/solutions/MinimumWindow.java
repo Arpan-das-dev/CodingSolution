@@ -13,9 +13,11 @@ public class MinimumWindow {
     Explanation: the minimum window substring "BANC" includes "A", "B", "C" from the string t
     input: s = "a" t = "a"
     Output: "a"
+    
     Explanation: the entire string s is the minimum window
     input: s = "a", t  = "aa"
     Output: ""
+    
     Explanation: Both "a" s from t must be included in the window. Since the largest window of s has only one "a"
     return output empty string.
      */
